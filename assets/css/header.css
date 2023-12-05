@@ -1,0 +1,132 @@
+     
+    #toggleDark {
+        font-size: 40px; 
+        margin-top: 80px; 
+        margin-left: 50px;
+    }
+     /* Light mode styles */
+     body {
+        background-color: #f0f0f0;
+        color: #333;
+    }
+
+    .card {
+        background-color: #fff;
+    }
+
+.card-section {
+    text-align: center; 
+    margin-top: 100px;
+  }
+  
+
+   /* Mix colors for the heading */
+.card-heading {
+    background: linear-gradient(90deg, #d64075, #1ca4b6, #ce9a2a);
+    -webkit-background-clip: text;
+    color: transparent;
+    font-size: 80px;
+
+    margin-bottom: 50px;
+
+}
+
+.cards {
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    gap: 15px;
+  }
+  
+  .cards .pink {
+    background-color:#e66190;
+  }
+  
+  .cards .blue {
+    background-color: #3ab9ca;
+  }
+  
+  .cards .yellow {
+    background-color: #e8b547;
+  }
+  
+  .cards .card {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    height: 300px; 
+    width: 400px; 
+    border-radius: 10px;
+    color: white;
+    cursor: pointer;
+    transition: 400ms;
+    margin-bottom: 50px;
+  }
+  
+  .cards .card p.tip {
+    font-size: 30px; 
+    font-weight: 700;
+  }
+  
+ 
+  .cards .card:hover {
+    transform: scale(1.1, 1.1);
+  }
+  
+  .cards:hover > .card:not(:hover) {
+    filter: blur(10px);
+    transform: scale(0.9, 0.9);
+  }
+  
+
+.button-outlined {
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    padding: 10px; 
+    margin: 0 700px; 
+    border: 2px solid #d52362;
+    color: #000;
+    font-weight: 600;
+    font-size: 20px; /* Adjust the font size as needed */
+    border-radius: 30px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.button-outlined:hover {
+    background-color: #ec6d9a;
+    color: #fff;
+}
+
+    /* Dark mode styles */
+    .dark-mode {
+        background-color: #333;
+        color: #f0f0f0;
+    }
+   
+    .dark-mode .card {
+        background-color: #444;
+    }
+
+    .dark-mode .card-heading {
+        color: #f0f0f0; /* Color in dark mode */
+    }
+
+    .dark-mode  .pink {
+        background-color:#d52362;
+      }
+      
+      .dark-mode  .blue {
+        background-color: #03bdd6;
+      }
+      
+      .dark-mode  .yellow {
+        background-color: #d2940e;
+      }
+     
+      .dark-mode .button-outlined{
+
+        color: azure;
+      }
